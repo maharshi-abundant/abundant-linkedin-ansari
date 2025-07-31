@@ -21,7 +21,47 @@ Profile page:
 - Firebase for Backend and Real-time Database
 - Tailwind CSS for Styling
 
-🔗 Check It Out:
-I invite you to explore LinkedAnsari by visiting 👇
+## 🚀 Quick Setup
 
-[https://linkedansari.web.app/](https://linkedansari.web.app/)
+### 1. Clone and Install
+```bash
+git clone <repository-url>
+cd LinkedAnsari
+npm install
+```
+
+### 2. Configure Firebase
+```bash
+# Run the setup script to create environment template
+node setup-env.js
+
+# Edit the .env file with your Firebase configuration
+# Get your Firebase config from: https://console.firebase.google.com/
+```
+
+### 3. Run Locally
+```bash
+npm run dev
+```
+
+### 4. Deploy to Firebase
+```bash
+npm run build
+firebase deploy
+```
+
+## 🔧 Fixing White Screen Issue
+
+If you're seeing a white screen on deployment, follow these steps:
+
+1. **Check Environment Variables**: Ensure your `.env` file has all required Firebase configuration
+2. **Verify Firebase Setup**: Make sure your Firebase project is properly configured
+3. **Check Browser Console**: Look for any error messages
+4. **Follow Deployment Guide**: See `DEPLOYMENT.md` for detailed instructions
+
+## 🔗 Live Demo
+[LinkedAnsari](https://linkedansari.web.app/)
+
+## 📖 Documentation
+- [Deployment Guide](DEPLOYMENT.md) - Detailed deployment instructions
+- [Firebase Setup](https://firebase.google.com/docs/web/setup) - Firebase configuration guide
